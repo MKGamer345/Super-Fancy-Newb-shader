@@ -328,27 +328,7 @@ float bevel(float x, float r) {
   return (1.0-r)*(1.0-sqrt(1.0-y*y));
 }
 
-// 2d noise
-float noise(vec2 p){
-  vec2 p0 = floor(p);
-  vec2 u = p-p0;
-
-  u *= u*(3.0-2.0*u);
-  vec2 v = 1.0 - u;
-
-  float c1 = rand(p0);
-  float c2 = rand(p0+vec2(1.0,0.0));
-  float c3 = rand(p0+vec2(0.0,1.0));
-  float c4 = rand(p0+vec2(1.0,1.0));
-
-  float n = v.y*mix(c1,c2,u.x) + u.y*(c3*v.x+c4*u.x);
-  return n;
-}
-
 float cloud_df(vec3 pos, float rain) {
-  pos.x += NL_CLOUD2_DF_X*noise(NL_CLOUD2_DF_X2*pos.xz);
-  pos.y += NL_CLOUD2_DF_Y*noise(NL_CLOUD2_DF_Y2*pos.xz);
-  pos.z += NL_CLOUD2_DF_Z*noise(NL_CLOUD2_DF_Z2*pos.xz);
   vec2 p0 = floor(pos.xz);
   vec2 u = smoothstep(0.99*NL_CLOUD2_SHAPE,0.995,pos.xz-p0);
   vec2 v = 1.0 - u;
