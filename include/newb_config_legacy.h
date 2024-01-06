@@ -31,16 +31,16 @@
 /* -------- CONFIG STARTS HERE ----------- */
 
 /* Color correction */
-#define NL_TONEMAP_TYPE 4   // 1:Exponential, 2:Reinhard, 3:Extended Reinhard, 4:ACES
+#define NL_TONEMAP_TYPE 3  // 1:Exponential, 2:Reinhard, 3:Extended Reinhard, 4:ACES
 #define NL_CONSTRAST 0.85   // 0.3 low ~ 2.0 high
 //#define NL_EXPOSURE 1.55   // [toggle] 0.5 dark ~ 3.0 bright
 //#define NL_SATURATION 1.2 // [toggle] 0.0 grayscale ~ 4.0 super saturated
 //#define NL_TINT vec3(1.0,0.75,0.5) // [toggle] color overlay
 
 /* Terrain lighting */
-#define NL_SUN_INTENSITY 5.0   // 0.5 weak ~ 5.0 bright
+#define NL_SUN_INTENSITY 4.0   // 0.5 weak ~ 5.0 bright
 #define NL_TORCH_INTENSITY 1.0  // 0.5 weak ~ 3.0 bright
-#define NL_NIGHT_BRIGHTNESS 0.1 // 0.0 dark ~ 2.0 bright
+#define NL_NIGHT_BRIGHTNESS 0.2 // 0.0 dark ~ 2.0 bright
 #define NL_CAVE_BRIGHTNESS  0.2 // 0.0 dark ~ 2.0 bright
 #define NL_SHADOW_INTENSITY 1.0 // 0.0 no shadow ~ 1.0 strong shadow
 #define NL_BLINKING_TORCH     // [toggle] flickering light
@@ -58,7 +58,7 @@
 
 /* Fog */
 #define NL_FOG_TYPE 2        // 0:no fog, 1:vanilla, 2:smoother vanilla, 3: volumetric fog
-#define NL_MIST_DENSITY 0.15 // 0.0 no mist ~ 1.0 misty
+#define NL_MIST_DENSITY 0.85 // 0.0 no mist ~ 1.0 misty
 
 /* Sky colors - zenith=top, horizon=bottom */
 #define NL_DAY_ZENITH_COL    vec3(0.26, 0.6, 1)
@@ -78,13 +78,13 @@
 /* Waving */
 #define NL_PLANTS_WAVE 0.3    // [toggle] 0.02 gentle ~ 0.4 violent
 #define NL_LANTERN_WAVE 0.3   // [toggle] 0.05 subtle ~ 0.4 large swing
-#define NL_WAVE_SPEED 1.0      // 0.5 slow wave ~ 5.0 very fast wave
+#define NL_WAVE_SPEED 0.5      // 0.5 slow wave ~ 5.0 very fast wave
 //#define NL_EXTRA_PLANTS_WAVE // [toggle] !dont use! wave using texture coords (1.20.40 vanilla)
 
 /* Water */
 #define NL_WATER_TRANSPARENCY 1.0 // 0.0 transparent ~ 1.0 normal
-#define NL_WATER_BUMP 0.0065        // 0.001 plain ~ 0.2 bumpy water
-#define NL_WATER_TEX_OPACITY 2.95  // 0.0 plain water ~ 1.0 vanilla water texture
+#define NL_WATER_BUMP 0.12        // 0.001 plain ~ 0.2 bumpy water
+#define NL_WATER_TEX_OPACITY 1.0  // 0.0 plain water ~ 1.0 vanilla water texture
 #define NL_WATER_WAVE             // [toggle] wave effect
 #define NL_WATER_FOG_FADE         // [toggle] fog fade for water
 //#define NL_WATER_CLOUD1_REFLECTION // [toggle] simple clouds/aurora reflection
@@ -115,20 +115,12 @@
 #define NL_CLOUD2_RAIN_THICKNESS 2.5 // 0.5 slim ~ 5.0 fat
 #define NL_CLOUD2_STEPS 16            // 3 low quality ~ 16 high quality
 #define NL_CLOUD2_SCALE 0.033        // 0.003 large ~ 0.3 tiny
-#define NL_CLOUD2_SHAPE 0.75         // 0.0 round ~ 1.0 box
-#define NL_CLOUD2_DENSITY 10.0        // 1.0 blurry ~ 100.0 sharp
+#define NL_CLOUD2_SHAPE 1.0         // 0.0 round ~ 1.0 box
+#define NL_CLOUD2_DENSITY 6.0        // 1.0 blurry ~ 100.0 sharp
 #define NL_CLOUD2_VELOCIY 0.8        // 0.0 static ~ 4.0 very fast
 #define NL_CLOUD2_DISTRIBUTION 0.2001
 #define NL_CLOUD2_DISTRIBUTION2 0.1999
 //#define NL_CLOUD2_MULTILAYER       // [toggle] extra cloud layer
-
-/* Rounded cloud noise Settings */
-#define NL_CLOUD2_DF_X 0.0
-#define NL_CLOUD2_DF_X2 0.0
-#define NL_CLOUD2_DF_Y 0.0
-#define NL_CLOUD2_DF_Y2 0.0
-#define NL_CLOUD2_DF_Z 0.0
-#define NL_CLOUD2_DF_Z2 0.0
 
 /*️ Aurora settings */
 //#define NL_AURORA 5.0           // [toggle] 0.4 dim ~ 4.0 very bright
