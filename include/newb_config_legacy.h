@@ -40,37 +40,37 @@
 /* Terrain lighting */
 #define NL_SUN_INTENSITY 4.0   // 0.5 weak ~ 5.0 bright
 #define NL_TORCH_INTENSITY 1.0  // 0.5 weak ~ 3.0 bright
-#define NL_NIGHT_BRIGHTNESS 0.2 // 0.0 dark ~ 2.0 bright
-#define NL_CAVE_BRIGHTNESS  0.2 // 0.0 dark ~ 2.0 bright
-#define NL_SHADOW_INTENSITY 1.0 // 0.0 no shadow ~ 1.0 strong shadow
+#define NL_NIGHT_BRIGHTNESS 0.3 // 0.0 dark ~ 2.0 bright
+#define NL_CAVE_BRIGHTNESS  0.3 // 0.0 dark ~ 2.0 bright
+#define NL_SHADOW_INTENSITY 0.85 // 0.0 no shadow ~ 1.0 strong shadow
 #define NL_BLINKING_TORCH     // [toggle] flickering light
 
 /* Sun/moon light color on terrain */
-#define NL_MORNING_SUN_COL vec3(1, 0.9, 0.4)
-#define NL_NOON_SUN_COL    vec3(1, 0.9, 0.4)
-#define NL_NIGHT_SUN_COL   vec3(0.002, 0.01, 0.024)
+#define NL_MORNING_SUN_COL vec3(1,0.839,0.604)
+#define NL_NOON_SUN_COL    vec3(0.988,0.988,0.996)
+#define NL_NIGHT_SUN_COL   vec3(0.098,0.451,0.788)
 
 /* Torch colors */
-#define NL_OVERWORLD_TORCH_COL  vec3(0.94, 0.35, 0.01)
-#define NL_UNDERWATER_TORCH_COL vec3(0.94, 0.35, 0.01)
-#define NL_NETHER_TORCH_COL     vec3(0.94, 0.35, 0.01)
-#define NL_END_TORCH_COL        vec3(0.94, 0.35, 0.01)
+#define NL_OVERWORLD_TORCH_COL  vec3(0.94, 0.35, 0.13)
+#define NL_UNDERWATER_TORCH_COL vec3(0.94, 0.35, 0.13)
+#define NL_NETHER_TORCH_COL     vec3(0.94, 0.35, 0.13)
+#define NL_END_TORCH_COL        vec3(0.94, 0.35, 0.13)
 
 /* Fog */
 #define NL_FOG_TYPE 2        // 0:no fog, 1:vanilla, 2:smoother vanilla, 3: volumetric fog
 #define NL_MIST_DENSITY 0.85 // 0.0 no mist ~ 1.0 misty
 
 /* Sky colors - zenith=top, horizon=bottom */
-#define NL_DAY_ZENITH_COL    vec3(0.26, 0.6, 1)
-#define NL_DAY_HORIZON_COL   vec3(0.89, 0.92, 0.94)
-#define NL_NIGHT_ZENITH_COL  vec3(0.002, 0.01, 0.024)
-#define NL_NIGHT_HORIZON_COL vec3(0.02, 0.1, 0.38)
-#define NL_RAIN_ZENITH_COL   vec3(0.37, 0.4, 0.42)
-#define NL_RAIN_HORIZON_COL  vec3(0.52, 0.57, 0.6)
-#define NL_END_ZENITH_COL    vec3(0.11, 0.07, 0.16)
-#define NL_END_HORIZON_COL   vec3(0.86, 0.55, 0.76)
-#define NL_DAWN_HORIZON_COL  vec3(1, 0.67, 0.1)
-#define NL_DAWN_EDGE_COL     vec3(1, 0.67, 0.1)
+#define NL_DAY_ZENITH_COL    vec3(0.341,0.537,0.729)
+#define NL_DAY_HORIZON_COL   vec3(0.816,0.914,1)
+#define NL_NIGHT_ZENITH_COL  vec3(0.012,0.247,0.475)
+#define NL_NIGHT_HORIZON_COL vec3(0.11,0.49,0.859)
+#define NL_RAIN_ZENITH_COL   vec3(0.278,0.376,0.514)
+#define NL_RAIN_HORIZON_COL  vec3(0.408,0.514,0.655)
+#define NL_END_ZENITH_COL    vec3(0.176,0.114,0.341)
+#define NL_END_HORIZON_COL   vec3(0.49,0.376,0.69)
+#define NL_DAWN_HORIZON_COL  vec3(1,0.773,0.58)
+#define NL_DAWN_EDGE_COL     vec3(1,0.773,0.58)
 
 /* Ore glow intensity */
 #define NL_GLOW_TEX 10.0 // 0.4 weak ~ 8.0 bright
@@ -88,7 +88,7 @@
 #define NL_WATER_WAVE             // [toggle] wave effect
 #define NL_WATER_FOG_FADE         // [toggle] fog fade for water
 //#define NL_WATER_CLOUD1_REFLECTION // [toggle] simple clouds/aurora reflection
-#define NL_WATER_TINT vec3(1, 1, 1)
+#define NL_WATER_TINT vec3(0.341,0.537,0.729)
 
 /* Underwater */
 #define NL_UNDERWATER_BRIGHTNESS 1.0 // 0.0 dark ~ 3.0 bright
@@ -111,9 +111,9 @@
 #define NL_CLOUD1_OPACITY 0.9              // 0.0 invisible ~ 1.0 opaque
 
 /* Rounded cloud Settings */
-#define NL_CLOUD2_THICKNESS 2.1      // 0.5 slim ~ 5.0 fat
-#define NL_CLOUD2_RAIN_THICKNESS 2.5 // 0.5 slim ~ 5.0 fat
-#define NL_CLOUD2_STEPS 16            // 3 low quality ~ 16 high quality
+#define NL_CLOUD2_THICKNESS 1.85      // 0.5 slim ~ 5.0 fat
+#define NL_CLOUD2_RAIN_THICKNESS 2.0 // 0.5 slim ~ 5.0 fat
+#define NL_CLOUD2_STEPS 10            // 3 low quality ~ 16 high quality
 #define NL_CLOUD2_SCALE 0.033        // 0.003 large ~ 0.3 tiny
 #define NL_CLOUD2_SHAPE 1.0         // 0.0 round ~ 1.0 box
 #define NL_CLOUD2_DENSITY 6.0        // 1.0 blurry ~ 100.0 sharp
@@ -132,8 +132,8 @@
 
 /* Rain effects */
 #define NL_RAIN_MIST_OPACITY 0.45 // [toggle] 0.04 very subtle ~ 0.5 thick mist blow
-#define NL_RAIN_WETNESS 2.0       // 0.0 no wetness - 1.0 fully wet blocks
-#define NL_RAIN_PUDDLES 2.0       // 0.0 no puddles - 1.0 puddles
+#define NL_RAIN_WETNESS 1.2       // 0.0 no wetness - 1.0 fully wet blocks
+#define NL_RAIN_PUDDLES 1.25       // 0.0 no puddles - 1.0 puddles
 
 /* Chunk loading slide in animation */
 //#define NL_CHUNK_LOAD_ANIM 100.0 // [toggle] -600.0 fall from top ~ 600.0 rise from bottom
@@ -149,143 +149,8 @@
 /* these are config of different subpacks. dont change! */
 /* names in pack.sh */
 
-#ifdef REALISTIC
-  #undef NL_CLOUD2_THICKNESS
-  #define NL_CLOUD2_THICKNESS 0.5
-  #undef NL_WATER_BUMP
-  #define NL_WATER_BUMP 0.15
-  #undef NL_WATER_TEX_OPACITY
-  #define NL_WATER_TEX_OPACITY 0.2
-  #undef NL_CLOUD2_RAIN_THICKNESS
-  #define NL_CLOUD2_RAIN_THICKNESS 0.5
-  #undef NL_CLOUD2_SHAPE
-  #define NL_CLOUD2_SHAPE 0.5
-  #undef NL_CLOUD2_DENSITY
-  #define NL_CLOUD2_DENSITY 3.4
-  #undef NL_CLOUD2_STEPS
-  #define NL_CLOUD2_STEPS 10
-  #undef NL_CLOUD2_DF_X
-  #define NL_CLOUD2_DF_X 0.07
-  #undef NL_CLOUD2_DF_X2
-  #define NL_CLOUD2_DF_X2 7.1
-  #undef NL_CLOUD2_DF_Y
-  #define NL_CLOUD2_DF_Y 0.7
-  #undef NL_CLOUD2_DF_Y2
-  #define NL_CLOUD2_DF_Y2 7.0
-  #undef NL_CLOUD2_DF_Z
-  #define NL_CLOUD2_DF_Z 0.07
-  #undef NL_CLOUD2_DF_Z2
-  #define NL_CLOUD2_DF_Z2 7.1
-  #undef NL_CLOUD2_SCALE
-  #define NL_CLOUD2_SCALE 0.015
-  #undef NL_CLOUD2_DISTRIBUTION
-  #define NL_CLOUD2_DISTRIBUTION 0.0901
-  #undef NL_CLOUD2_DISTRIBUTION2
-  #define NL_CLOUD2_DISTRIBUTION2 0.0899 
-  #undef NL_WATER_TINT
-  #define NL_WATER_TINT vec3(0.05, 0.47, 0.76)
-  #undef NL_WATER_TRANSPARENCY
-  #define NL_WATER_TRANSPARENCY 0.75
-#endif
-
-#ifdef REIMAGIED
-  #undef NL_CLOUD2_SHAPE
-  #define NL_CLOUD2_SHAPE 1.0
-#endif
-
-#ifdef RENEWED
-  #undef NL_CLOUD2_SHAPE
-  #define NL_CLOUD2_SHAPE 1.0
-  #undef NL_CLOUD2_SCALE
-  #define NL_CLOUD2_SCALE 0.011
-  #undef NL_CLOUD2_VELOCIY
-  #define NL_CLOUD2_VELOCIY 8.0
-  #undef NL_CLOUD2_DISTRIBUTION
-  #define NL_CLOUD2_DISTRIBUTION 0.1001
-  #undef NL_CLOUD2_DISTRIBUTION2
-  #define NL_CLOUD2_DISTRIBUTION2 0.0999
-#endif
-
-#ifdef UNBOUND
-    #undef NL_CLOUD2_THICKNESS
-  #define NL_CLOUD2_THICKNESS 2.5
-  #undef NL_WATER_BUMP
-  #define NL_WATER_BUMP 0.15
-  #undef NL_WATER_TEX_OPACITY
-  #define NL_WATER_TEX_OPACITY 0.2
-  #undef NL_CLOUD2_RAIN_THICKNESS
-  #define NL_CLOUD2_RAIN_THICKNESS 2.5
-  #undef NL_CLOUD2_SHAPE
-  #define NL_CLOUD2_SHAPE 0.0
-  #undef NL_CLOUD2_DENSITY
-  #define NL_CLOUD2_DENSITY 5.0
-  #undef NL_CLOUD2_STEPS
-  #define NL_CLOUD2_STEPS 10
-  #undef NL_CLOUD2_SCALE
-  #define NL_CLOUD2_SCALE 0.023
-  #undef NL_CLOUD2_DF_X
-  #define NL_CLOUD2_DF_X 0.25
-  #undef NL_CLOUD2_DF_X2
-  #define NL_CLOUD2_DF_X2 9.0
-  #undef NL_CLOUD2_DF_Y
-  #define NL_CLOUD2_DF_Y 0.25
-  #undef NL_CLOUD2_DF_Y2
-  #define NL_CLOUD2_DF_Y2 8.0
-  #undef NL_CLOUD2_DF_Z
-  #define NL_CLOUD2_DF_Z 0.25
-  #undef NL_CLOUD2_DF_Z2
-  #define NL_CLOUD2_DF_Z2 9.0
-  #undef NL_CLOUD2_DISTRIBUTION
-  #define NL_CLOUD2_DISTRIBUTION 0.3001
-  #undef NL_CLOUD2_DISTRIBUTION2
-  #define NL_CLOUD2_DISTRIBUTION2 0.2999
-  #undef NL_CLOUD2_VELOCIY
-  #define NL_CLOUD2_VELOCIY 1.85
-  #undef NL_WATER_TINT
-  #define NL_WATER_TINT vec3(0.05, 0.47, 0.76)
-  #undef NL_WATER_TRANSPARENCY
-  #define NL_WATER_TRANSPARENCY 0.75
-#endif
-
-#ifdef REBORN
-  #undef NL_CLOUD2_THICKNESS
-  #define NL_CLOUD2_THICKNESS 5.0
-  #undef NL_WATER_BUMP
-  #define NL_WATER_BUMP 0.15
-  #undef NL_WATER_TEX_OPACITY
-  #define NL_WATER_TEX_OPACITY 0.2
-  #undef NL_CLOUD2_RAIN_THICKNESS
-  #define NL_CLOUD2_RAIN_THICKNESS 5.0
-  #undef NL_CLOUD2_SHAPE
-  #define NL_CLOUD2_SHAPE 0.0
-  #undef NL_CLOUD2_DENSITY
-  #define NL_CLOUD2_DENSITY 10.0
-  #undef NL_CLOUD2_STEPS
-  #define NL_CLOUD2_STEPS 16
-  #undef NL_CLOUD2_SCALE
-  #define NL_CLOUD2_SCALE 0.017
-  #undef NL_CLOUD2_DF_X
-  #define NL_CLOUD2_DF_X 0.25
-  #undef NL_CLOUD2_DF_X2
-  #define NL_CLOUD2_DF_X2 9.0
-  #undef NL_CLOUD2_DF_Y
-  #define NL_CLOUD2_DF_Y 0.25
-  #undef NL_CLOUD2_DF_Y2
-  #define NL_CLOUD2_DF_Y2 8.0
-  #undef NL_CLOUD2_DF_Z
-  #define NL_CLOUD2_DF_Z 0.25
-  #undef NL_CLOUD2_DF_Z2
-  #define NL_CLOUD2_DF_Z2 9.0
-  #undef NL_CLOUD2_DISTRIBUTION
-  #define NL_CLOUD2_DISTRIBUTION 0.3001
-  #undef NL_CLOUD2_DISTRIBUTION2
-  #define NL_CLOUD2_DISTRIBUTION2 0.2999
-  #undef NL_CLOUD2_VELOCIY
-  #define NL_CLOUD2_VELOCIY 1.85
-  #undef NL_WATER_TINT
-  #define NL_WATER_TINT vec3(0.05, 0.47, 0.76)
-  #undef NL_WATER_TRANSPARENCY
-  #define NL_WATER_TRANSPARENCY 0.75
+#ifdef MULTILAYER_CLOUDS
+ #define NL_CLOUD2_MULTILAYER
 #endif
 
 #endif
