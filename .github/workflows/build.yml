@@ -41,18 +41,18 @@ jobs:
     - name: Upload Windows pack
       uses: actions/upload-artifact@v3
       with:
-        name: newb-x-windows
+        name: super-fancy-newb-windows
         path: ./build/windows/temp
 
     - name: Upload Android pack
       uses: actions/upload-artifact@v3
       with:
-        name: newb-x-android
+        name: super-fancy-newb-android
         path: ./build/android/temp
 
     - name: Upload iOS materials
       uses: actions/upload-artifact@v3
       with:
-        name: newb-x-ios-materials
+        name: super-fancy-newb-ios
         path: ./build/ios
 
