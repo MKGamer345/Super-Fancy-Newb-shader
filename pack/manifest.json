@@ -2,8 +2,8 @@
     "format_version": 2,
     "header": {
         "description": "§c%w\n§7- An enchanced vanilla shader for Minecraft!\n%v %c\n§3https://github.com/devendrn/newb-x-mcbe/",
-        "name": "Newb X Legacy",
-        "uuid": "95f774cf-4afa-73e7-a21a-72146307b1d2",
+        "name": "Super Fancy Newb Shader",
+        "uuid": "95f774cf-4afa-73e7-a21a-72146307b1d9",
         "version": [0, 15, 0],
         "min_engine_version": [1, 19, 60]
     },
@@ -11,12 +11,12 @@
         {
             "description": "Legacy port of Newb Shader for Renderdragon",
             "type": "resources",
-            "uuid": "900f3d8b-37b4-465f-8f56-941687e36c35",
+            "uuid": "900f3d8b-37b4-465f-8f56-941687e36c39",
             "version": [0, 15, 0]
         }
     ],
     "metadata": {
-        "authors": ["devendrn"],
+        "authors": ["MKGammingYT"],
         "url": "https://github.com/devendrn/newb-x-mcbe/"
     }
 }
